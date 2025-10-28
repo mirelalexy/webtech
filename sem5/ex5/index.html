@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = () => {
+            var form = document.getElementById("form");
+            const tableBody = document.getElementById("contactsBody");
+
+            form.onsubmit = (e) => {
+                e.preventDefault();
+
+                var name = document.getElementById("name").value;
+                var phoneNum = document.getElementById("phoneNum").value;
+
+                var row = document.createElement("tr");
+                var nameCell  = document.createElement("td");
+                var phoneCell  = document.createElement("td");
+
+
+                nameCell.textContent = name;
+                phoneCell.textContent = phoneNum;
+
+                row.appendChild(nameCell);
+                row.appendChild(phoneCell);
+
+                tableBody.appendChild(row);
+                form.reset();
+            };
+        };
+    </script>
+</head>
+<body>
+    <h1>Contacts</h1>
+    <h2>Add new contact</h2>
+    <form id="form">
+        <input type="text" id="name" placeholder="Name"/>
+        <input type="tel" id="phoneNum" placeholder="Number"/>
+        <button type="submit" id="submitBtn">Add</button>
+    </form>
+    <br>
+    <table id="contacts">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Phone Number</th>
+            </tr>
+        </thead>
+        <tbody id="contactsBody"></tbody>
+    </table>
+</body>
+</html>

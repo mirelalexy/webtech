@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = () => {
+            const btn = document.getElementById("btn");
+            const ev = new Event("ev");
+
+            const clickHandler = () => {
+                document.dispatchEvent(ev);
+            }
+
+            const evHandler = () => {
+                console.log("Button clicked.");
+            }
+
+            btn.onclick = clickHandler;
+            document.addEventListener("ev", evHandler);
+        }
+    </script>
+</head>
+<body>
+    <button id="btn">Click me</button>
+</body>
+</html>
