@@ -1,0 +1,114 @@
+input[type="checkbox"] {
+    outline: 2px solid black;
+}
+
+input[type="checkbox"]:checked {
+    outline-color: red;
+}
+
+.container {
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.row {
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.square {
+    float: left;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contactForm {
+    max-width: 500px;
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+}
+
+#formTitle {
+    font-size: 1.5em;
+}
+
+.contactContainer form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formRow {
+    display: flex;
+    flex-direction: column;
+}
+
+.formRow label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formRow input,
+.formRow select,
+.formRow textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.formRow input:focus,
+.formRow select:focus,
+.formRow textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #68c06b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 70px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style-type: none;
+    gap: 10px;
+    margin: 0;
+    display: flex;
+}
+
+a {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a:hover {
+    background-color: grey;
+}

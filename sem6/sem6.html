@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sem6.css"/>
+</head>
+<body>
+    <label>
+        <input type="checkbox"> Check me
+    </label>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Faculty</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ionut</td>
+                <td>ASE</td>
+            </tr>
+
+            <tr>
+                <td>Mihaela</td>
+                <td>Politie</td>
+            </tr>
+
+            <tr>
+                <td>Alex</td>
+                <td>Secretar</td>
+            </tr>
+
+            <tr>
+                <td>Ioana</td>
+                <td>Poli</td>
+            </tr>
+
+            <tr>
+                <td>Mihaita</td>
+                <td>Bibliotecar</td>
+            </tr>                
+
+            <tr>
+                <td>Denis</td>
+                <td>Politie</td>
+            </tr>
+
+            <tr>
+                <td>Marcel</td>
+                <td>Pompieri</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="container">
+        <div class="row">
+            <h1>Tic Tac Toe</h1>
+        </div>
+
+        <div class="row">
+            <div class="top left square"></div>
+            <div class="top middle square"></div>
+            <div class="top right square"></div>
+        </div>
+
+        <div class="row">
+            <div class="middle left square"></div>
+            <div class="middle middle square"></div>
+            <div class="middle right square"></div>
+        </div>
+
+        <div class="row">
+            <div class="bottom left square"></div>
+            <div class="bottom middle square"></div>
+            <div class="bottom right square"></div>
+        </div>
+    </div>
+
+    <br></br>
+
+    <div class="contactRow">
+        <h1 id="formTitle">Contact Form</h1>
+    </div>
+
+    <div class="contactForm">
+        <div class="contactContainer">
+            <form action="javascript:" method="post">
+                <div class="formRow" id="first">
+                    <label for="firstname" class="contactLabel">First Name</label>
+                    <input type="text" placeholder="Type your first name here..." name="firstname" required>
+                </div>
+
+                <div class="formRow">
+                    <label for="lastname" class="contactLabel">Last Name</label>
+                    <input type="text" placeholder="Type your last name here..." name="lastname" required>
+                </div>
+
+                <div class="formRow">
+                    <label for="country" class="contactLabel">Country</label>
+                    <select id="country" name="country" required>
+                        <option value="hungary">Hungary</option>
+                        <option value="hungary">Romania</option>
+                        <option value="hungary">Germany</option>
+                        <option value="hungary">Austria</option>
+                    </select>
+                </div>
+
+                <div class="formRow">
+                <label for="subject" class="contactLabel">Subject</label>
+                <textarea id="subject" name="subject" rows="5" placeholder="Write something..." required></textarea>
+                </div>
+
+                <div class="formRow" id="last">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li><a href="a">Home</a></li>
+            <li><a href="a">Feedback</a></li>
+            <li><a href="a">Contact</a></li>
+            <li><a href="a">Articles</a></li>
+        </ul>
+    </div>
+</body>
+<script src="sem6.js"></script>
+</html>
