@@ -1,0 +1,66 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 40px;
+    background-color: #5d5d5d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(8, 80px);
+    grid-template-rows: repeat(8, 80px);
+    position: relative;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    background-color: white;
+}
+
+.top, .bottom {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.top {
+    top: -25px;
+}
+
+.bottom {
+    bottom: -25px;
+}
+
+.wrapper-inner {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.box-inner {
+    align-self: center;
+    text-align: center;
+    color: white;
+}
+
+.box:nth-child(-2n+9), 
+.box:nth-child(9) ~ div:nth-child(-2n+16), 
+.box:nth-child(17) ~ div:nth-child(-2n+25), 
+.box:nth-child(25) ~ div:nth-child(-2n+32), 
+.box:nth-child(33) ~ div:nth-child(-2n+41), 
+.box:nth-child(41) ~ div:nth-child(-2n+48), 
+.box:nth-child(49) ~ div:nth-child(-2n+57), 
+.box:nth-child(57) ~ div:nth-child(-2n+64){
+  background-color: black;
+}
